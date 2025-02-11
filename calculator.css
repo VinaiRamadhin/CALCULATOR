@@ -1,0 +1,55 @@
+/* Write CSS code here */
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color:rgb(25, 10, 232);
+ font-family:'Times New Roman', Times, serif;
+}
+
+.calculator{
+ border-radius: 10px;
+ overflow: hidden;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display{
+ padding: 20px;
+ font-size: 30px;
+ border: none;
+ text-align: right;
+ background-color: rgba(83, 82, 81, 1);
+ color: whitesmoke
+}
+
+.buttons{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+}
+
+.btn{
+ padding: 20px;
+ font-size: 20px;
+ border: 1px solid;
+ color: black;
+ background-color: white;
+ cursor: pointer;
+}
+
+.equal{
+ grid-column: span 3;
+ background-color: aquamarine;
+}
+
+.btn:hover {
+ opacity: 0.8;
+}
+
+.equal{
+ cursor: pointer;
+}
+
+.equal:hover{
+ opacity: 0.8;
+}
